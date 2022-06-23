@@ -26,10 +26,8 @@ $x^{(i+1)}=x^i-\eta\nabla{f(x^i)}$，其中$\eta$代表学习速率或步长。
 
    有$\vec{e}\nabla{f(x^k)}<0$
 
-   3. 讨论$\vec{e}\nabla{f(x^k)}<0$
+3. 讨论$\vec{e}\nabla{f(x^k)}<0$因为$\vec{e}$为$x-x^k$的单位向量，$\nabla{f(x^k)}$也为一个向量，要使$\vec{e}\nabla{f(x^k)}$最小，则$\vec{e}$与$\nabla{f(x^k)}$方向相反，即由$\vec{a}·\vec{b}=||\vec{a}||·||\vec{b}||·\cos{\alpha}$，$\alpha$为$\vec{a}$，$\vec{b}$夹角，当$\alpha={180}^\text{o}$时，$\cos{\alpha}=-1$，推出：
 
-      因为$\vec{e}$为$x-x^k$的单位向量，$\nabla{f(x^k)}$也为一个向量，要使$\vec{e}\nabla{f(x^k)}$最小，则$\vec{e}$与$\nabla{f(x^k)}$方向相反，即由$\vec{a}·\vec{b}=||\vec{a}||·||\vec{b}||·\cos{\alpha}$，$\alpha$为$\vec{a}$，$\vec{b}$夹角，当$\alpha={180}^\text{o}$时，$\cos{\alpha}=-1$，推出：
-
-      $$\vec{e}=-\frac{\nabla{f(x^k)}}{||\nabla{f(x^k)}||}$$
+   $$\vec{e}=-\frac{\nabla{f(x^k)}}{||\nabla{f(x^k)}||}$$，
 
 4. $x=x^k-\lambda\frac{\nabla{f(x^k)}}{||\nabla{f(x^k)}||}$，简化有$x^{(i+1)}=x^i-\eta\nabla{f(x^i)}$，其中$\eta=\frac{\lambda}{||\nabla{f(x^k)}||}$，可以后期自己调整。
